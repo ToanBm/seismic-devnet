@@ -48,7 +48,14 @@ git clone --recurse-submodules https://github.com/SeismicSystems/try-devnet.git 
 ```
 bash script/deploy.sh
 ```
-
+### When you see:
+```
+Step 2: Funding wallet
+Please visit: https://faucet-2.seismicdev.net/
+Enter this address: YOUR-WALLET-ADDRESS
+Press Enter when done...
+```
+## Please faucet, check balance and ENTER to continue!
 ### Faucet
 [Faucet](https://faucet-2.seismicdev.net/)
 ### Check balance on Explorer
@@ -60,6 +67,9 @@ bash script/deploy.sh
 cd
 curl -fsSL https://bun.sh/install | bash
 ```
+```
+source /root/.bashrc
+```
 ### Install node dependencies
 ```bash
 cd try-devnet/packages/cli/
@@ -70,43 +80,30 @@ bun install
 bash script/transact.sh
 ```
 
-you will see this again. inside
-- step1: hit enter
-- step2: 
+### When you see:
+```
+Step 2: Funding wallet
+Please visit: https://faucet-2.seismicdev.net/
+Enter this address: YOUR-WALLET-ADDRESS
+Press Enter when done...
+```
+## Please faucet, check balance and ENTER to continue!
 
-![alt text](./images/image4.png)
+### Take the screenshot both 2 Deploy and interact an encrypted contract. Then post it on it X. https://x.com/buiminhtoan1985/status/1904913621878190521
 
-go to https://faucet-2.seismicdev.net/ and then enter the address show on image to get token.
-
-![alt text](./images/image5.png)
-
-wait 15-30 seconds then hit enter and enjoys the rest. 
-
-you have done when you see 
-
-![alt text](./images/image7.png)
-
-when you come to this place. You are doing the good job.
-
+##   Done!
 
 # Additional links Seismic Devnet:
 ```
 Network Name: Seismic devnet
-
 Currency Symbol: ETH
-
 Chain ID: 5124
-
 RPC URL (HTTP): https://node-2.seismicdev.net/rpc
-
 RPC URL (WebSocket): wss://node-2.seismicdev.net/ws
-
 Explorer: https://explorer-2.seismicdev.net
-
 Faucet: https://faucet-2.seismicdev.net
-
 Starter Repo: https://github.com/SeismicSystems/seismic-starter
 ```
 
-Take the screenshot both 2 Deploy and interact an encrypted contract.  Then post it on it X. https://x.com/leiz95/status/1904779356053946544
+
 
