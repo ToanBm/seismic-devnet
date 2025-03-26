@@ -1,17 +1,16 @@
 # Seismic Devnet Create and Interact with First contract
-# Hardware
+### Hardware
 The minimum hardware requirements for running an Initia node are:
 ```bash
 CPU: 2 cores
 Memory: 4GB RAM
 ```
-# Deploy an encrypted contract
-## Step 1
-Update all the packages
+## Step 1: Deploy an encrypted contract
+### Update all the packages
 ```
 sudo apt update && sudo apt install git -y && sudo apt install build-essential -y
 ```
-Install Rust
+### Install Rust
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 ```
@@ -23,62 +22,54 @@ source $HOME/.cargo/env
 rustc --version
 cargo --version
 ```
-## Step2: 
-
-install `jq`
-
+### Install jq
 ```
 sudo apt install jq
 ```
-
-## Step 3
-Install sfoundryup
+### Install sfoundryup
 ```bash
 curl -L \
      -H "Accept: application/vnd.github.v3.raw" \
      "https://api.github.com/repos/SeismicSystems/seismic-foundry/contents/sfoundryup/install?ref=seismic" | bash
 ```
-```bash
+```
 source /root/.bashrc
 ```
-```bash
+### Run sfoundryup
+```
 sfoundryup
 ```
-## step 4
-clone the repository
+#### takes between 5m to 60m, and stalling for a while at 98% normal
+### Clone the repository
 ```bash
 git clone --recurse-submodules https://github.com/SeismicSystems/try-devnet.git && cd try-devnet/packages/contract/
 ```
-## Step 5 
-Deploy contract
+### Deploy contract
 ```
 bash script/deploy.sh
 ```
 
-go to https://faucet-2.seismicdev.net/ and then enter the address show on image to get token.
-wait 15-30 seconds then hit enter and enjoys the rest. 
-you have done when you see 
-# Interact with deploy contract
-## step 1
-install **bun**
+### Faucet
+[Faucet](https://faucet-2.seismicdev.net/)
+### Check balance on Explorer
+[Explorer](https://explorer-2.seismicdev.net/)
 
+##  Step 2: Interact with deploy contract
+### Install Bun
 ```
 cd
 curl -fsSL https://bun.sh/install | bash
 ```
-## step 2 
-run 
+### Install node dependencies
 ```bash
 cd try-devnet/packages/cli/
 bun install
 ```
-## step 3
-
-run 
-
-```bash
+### Send transactions
+```
 bash script/transact.sh
 ```
+
 you will see this again. inside
 - step1: hit enter
 - step2: 
