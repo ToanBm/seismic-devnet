@@ -8,7 +8,8 @@ Memory: 4GB RAM
 ## Step 1: Deploy an encrypted contract
 ### Update all the packages
 ```
-sudo apt update && sudo apt install git -y && sudo apt install build-essential -y
+sudo apt update && sudo apt install git -y && sudo apt install build-essential -y && sudo apt install unzip -y
+
 ```
 ### Install Rust
 ```
